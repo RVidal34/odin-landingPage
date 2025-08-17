@@ -1,0 +1,32 @@
+@use '../settings/variables';
+
+.nav {
+  max-width: 1024px;
+  padding: 24px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    @include variables.logo-text;
+  }
+
+  &__links {
+    @include variables.header-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+      padding: 4px 8px;
+      border-radius: 8px;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    &__link:hover {
+      background: #e5e7eb;
+      color: #1f2937;
+    }
+  }
+}

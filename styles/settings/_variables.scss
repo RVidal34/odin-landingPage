@@ -1,0 +1,60 @@
+/* --------------------------------------- */
+/* VARIABLES & MIXINS FOR COLORS AND FONTS */
+/* --------------------------------------- */
+/* --------------------------------------------------
+This file contains all the variables & mixins related
+to the fonts and colors of the website.
+-------------------------------------------------- */
+
+/* -------------- */
+/* Font Variables */
+/* -------------- */
+
+// Importing the font
+@font-face {
+  font-family: "roboto";
+  src: url(../../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+// Font variable
+$mainFont: "roboto", sans-serif;
+
+/* ----------- */
+/* Font Mixins */
+/* ----------- */
+
+// Mixin for the header title
+@mixin header-title {
+  font-family: $mainFont;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+// mixin for the texts of header and links of navbar
+@mixin header-text {
+  font-family: $mainFont;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+}
+
+// mixin for the logo text
+@mixin logo-text {
+  font-family: $mainFont;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f9faf8;
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+/* ---------------- */
+/* Colors Variables */
+/* ---------------- */
+
+// Backgrounds
+$dark-background-color: #1f2937;
+$quote-background-color: #e5e7eb;
+$main-background-color: #ffffff;

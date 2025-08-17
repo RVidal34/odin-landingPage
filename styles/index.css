@@ -1,0 +1,129 @@
+/* --------------------------- */
+/* General styles for settings */
+/* --------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------- */
+/* Header STYLES */
+/* ------------- */
+/* --------------------------------------- */
+/* VARIABLES & MIXINS FOR COLORS AND FONTS */
+/* --------------------------------------- */
+/* --------------------------------------------------
+This file contains all the variables & mixins related
+to the fonts and colors of the website.
+-------------------------------------------------- */
+/* -------------- */
+/* Font Variables */
+/* -------------- */
+@font-face {
+  font-family: "roboto";
+  src: url(../../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+/* ----------- */
+/* Font Mixins */
+/* ----------- */
+/* ------------------------------------------------------------ */
+/* ---------------- */
+/* Colors Variables */
+/* ---------------- */
+.header {
+  background: #1f2937;
+}
+
+.nav {
+  max-width: 1024px;
+  padding: 24px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  font-family: "roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f9faf8;
+}
+.nav__links {
+  font-family: "roboto", sans-serif;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__links__link {
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.nav__links__link:hover {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.hero {
+  max-width: 1024px;
+  padding: 80px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+.hero__presentation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero__presentation h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f9faf8;
+}
+.hero__presentation p {
+  font-family: "roboto", sans-serif;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+}
+.hero__presentation #hero-button {
+  padding: 8px 36px;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background: #3882f6;
+  color: #f9faf8;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+.hero__presentation #hero-button:hover {
+  background: #f9faf8;
+  color: #3882f6;
+}
+.hero__picture {
+  font-family: "roboto", sans-serif;
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}/*# sourceMappingURL=index.css.map */

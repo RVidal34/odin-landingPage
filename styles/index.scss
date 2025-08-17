@@ -1,0 +1,13 @@
+/* --------------------------- */
+/* General styles for settings */
+/* --------------------------- */
+
+@use "./settings/generals";
+
+/* ------------- */
+/* Header STYLES */
+/* ------------- */
+
+@use "./header/header";     // general style of the header
+@use "./header/nav";  // navbar style rules
+@use "./header/hero"; // hero section style rules
